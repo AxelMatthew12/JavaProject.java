@@ -135,4 +135,14 @@ class StokBarang {
             
         }
     }
+   static double perhitungandiskon(double total){
+    double diskon=0.0;
+
+    if (total > 100000) {
+        diskon = total * 0.1;//diskon 10%
+        
+    }
+    return total-diskon;
+   }
+
 }
