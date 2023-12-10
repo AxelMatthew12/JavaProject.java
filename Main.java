@@ -23,12 +23,59 @@ public class Main {
         if (pilih.equalsIgnoreCase(MANAJER)) {
             manajer();
         } else if (pilih.equalsIgnoreCase(KASIR)) {
-            kasir();
+            kasier();
         } else if (pilih.equalsIgnoreCase(KELUAR)) {
-            System.out.println("==ANDA KELUAR DARI PROGRAM !==");
+            System.out.println("== ANDA KELUAR DARI PROGRAM! ==");
         } else {
             System.out.println("Eror 404: Pilihan tidak valid");
         }
+    }
+    static void kasier(){
+    Scanner input= new Scanner(System.in);
+    String pencatatanpesanan="PENCATATAN PESANAN";
+    String melihatstok="PROSES TRANSAKSI";
+    String laporanpendapatan="LAPORAN PENDAPATAN";
+    System.out.println("============= WELCOME ==============");
+    System.out.println("==                                ==");
+    System.out.println("==                                ==");
+    System.out.println("         PENCATATAN PESANAN         ");
+    System.out.println("            MELIHAT STOK            ");
+    System.out.println("          PROSES TRANSAKSI          ");
+    System.out.println("======  LAPORKAN PENDAPATAN  ====== ");
+    String pilihankasir= input.nextLine();
+
+    if (pilihankasir.equals(pencatatanpesanan)) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("====== SELAAMT DATANG DI KANTIN SEHAT ======");
+        System.out.println("====               MENU                 ====");
+        System.out.println("         1. NASI GORENG SEHAT               ");
+        System.out.println("         2. SOTO BENING                     ");
+        System.out.println("         3. RAWON                           ");
+        System.out.println("         4. BUBUR AYAM                      ");
+        System.out.println("         5. SUP SAYUR                       ");
+        System.out.println("                MINUMAN                     ");
+        System.out.println("         1. AIR PUTIH AQUA                  ");
+        System.out.println("         2. AIR HANGAT                      ");
+        System.out.println("         3. TEH HANGAT                      ");
+        System.out.println("         4. ES TEH                          ");
+        System.out.println("         5. ES JERUK                        ");
+        System.out.println(" SILAHKAN MASUKKAN PESANAN ANDA:            ");
+        int Pesanan= scanner.nextInt();
+
+        switch (Pesanan) {
+            case 1:
+            System.out.println("NASI GORENG SEHAT");
+            break;
+        
+            case 2:
+            System.out.println("SOTO BENING");
+            break;
+            case 3:
+            System.out.println(" RAWON");
+        }
+    }
+
+
     }
 
     static void manajer() {
@@ -145,4 +192,6 @@ class StokBarang {
     return total-diskon;
    }
 
-}
+   }
+
+
